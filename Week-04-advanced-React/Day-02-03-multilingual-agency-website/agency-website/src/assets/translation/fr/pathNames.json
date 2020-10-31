@@ -1,0 +1,14 @@
+{
+  "home": {
+    "label": "Accueil"
+  },
+  "about": {
+    "path": "apopos",
+    "label": "A propos"
+    },
+  "works":{ 
+    "path": "projets",
+    "label": "Projets"
+  },
+  "case-study.path": "etude-cas" 
+}

@@ -1,0 +1,44 @@
+@import '../../variables.scss';
+$background-color: #1b1b1b;
+$active-background: #24abf2;
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: $background-color;
+  
+  li {
+    float: left;
+    
+    &.lang {
+      float: right;
+    }
+    
+    img:hover {
+      cursor: pointer;
+    }
+
+    a,
+    &.lang {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+    }
+    
+    a {
+      text-decoration: none;
+      
+      &:hover {
+        background-color: lighten($color: $background-color, $amount: 15%);
+      }
+      
+      &:focus {
+        background-color: $active-background;
+      }
+    }
+  }
+}
+

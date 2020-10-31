@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic routing</title>
+    <link rel="stylesheet" href="dist/bundle.css" />
+  </head>
+  
+  <body>
+    <!-- <a href="#pagelist/borderlands">PageList borderlands</a> -->
+
+    <div class="container-fluid pt-5 px-5">
+      <div class="row d-flex justify-content-between align-items-center px-0">
+        <div class="col-lg-6 mb-4 mb-lg-0">
+          <a href="#" class="big-text-a text-decoration-none">The Hyper Progame</a>
+        </div>
+        <div class="offset-lg-2 col-lg-4">
+          <div class="">
+            <div class="search-bar d-flex align-items-center">
+              <img src="./src/images/search.svg" class="search-icon ml-3">
+              <input id="submit" type="text" class='search-input w-100 pl-5' placeholder="Find a game">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid my-5 px-5">
+      <h1 class="big-text">Welcome,</h1>
+      <p class="small-regular-p">The Hyper Progame is the world’s premier event for computer and video games and related products. At The Hyper Progame,
+        the video game industry’s top talent pack the Los Angeles Convention Center, connecting tens of thousands of the best,
+        brightest, and most innovative in the interactive entertainment industry. For three exciting days, leading-edge companies,
+        groundbreaking new technologies, and never-before-seen products will be showcased. The Hyper Progame connects you
+        with both new and existing partners, industry executives, gamers, and social influencers providing unprecedented exposure</p>
+    </div>
+
+    <div class="container-fluid pt-2 pb-5 px-5">
+      <div class="row mb-4 pb-2">
+        <div class="col-md-3">
+          <select id="slct-pltfrm" class="slct-pltfrm px-5">
+            <option value="" selected>Platform : any</option>
+            <option value="6">Linux</option>
+            <option value="4">Windows</option>
+            <option value="41">Apple</option>
+            <option value="187,18,16,15,27">PlayStation</option>
+            <option value="7">Switch</option>
+            <option value="1,186,14,80">Xbox</option>
+          </select>
+        </div>
+      </div>
+      <section id="pageContent" class="pb-5">
+        
+      </section>
+      <div class="row mt-3">
+        <div class="col text-center">
+          <button id="show-more-btn" type="button" class="big-btn py-0">Show more</button>
+        </div>
+      </div>
+    </div>
+
+    <footer class="container-fluid my-5 px-5">
+      <div class="sml-bar w-25 mb-4"></div>
+      <p>Your Name @ 2020 - Fictionnal website for exercice</p>
+    </footer>
+    <script src="./src/js/anime.min.js"></script>
+    <script src="dist/bundle.js"></script>
+  </body>
+</html>

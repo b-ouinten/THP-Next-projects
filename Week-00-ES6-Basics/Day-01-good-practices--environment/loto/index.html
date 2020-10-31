@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>Loto</title>
+  <link rel="stylesheet" href="assets/css/bootstrap.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+
+  <div class="container mt-5">
+    <form id="user-info-form">
+      <div class="form-row">
+        <div class="form-group offset-sm-1 col-sm-5 offset-md-3 col-md-3">
+          <label for="firstNameInput">First name</label>
+          <input type="text" class="form-control" id="firstNameInput" placeholder="First name">
+          <div class="al alert alert-danger mb-0" id="firstNameAlert">First name is required</div>
+        </div>
+        <div class="form-group col-sm-5 col-md-3">
+          <label for="lastNameInput">Last name</label>
+          <input type="text" class="form-control" id="lastNameInput" placeholder="Last name">
+          <div class="al alert alert-danger mb-0" id="lastNameAlert">Last name is required</div>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group offset-sm-1 col-sm-10 offset-md-3 col-md-6">
+          <label for="inputEmail">Email</label>
+          <input type="text" class="form-control" id="emailInput" placeholder="Email">
+          <div class="al alert alert-danger mb-0"  id="emailAlert">Email is invalid</div>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="col text-center">
+          <button type="button" class="btn btn-primary" id="send-user-info-btn">Send</button>
+        </div>
+      </div>
+    </form>
+    
+    <form id="loto-form">
+      <div class="form-row">
+        <div class="form-group offset-sm-1 col-sm-10 offset-md-3 col-md-6">
+          <label for="lotoNumberInput">Loto numbers</label>
+          <input type="text" maxlength="11" class="form-control p-1 p-sm-3" id="lotoNumberInput" placeholder="e.g. 0-5-2-9-1-7 ">
+          <div class="al alert alert-danger mb-0"  id="loto-number-alert">Loto number is empty</div>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="col text-center">
+          <button type="button" class="btn btn-primary" id="send-loto-number-btn">Send</button>
+        </div>
+      </div>
+    </form>
+
+    <div class='row'>
+      <div class='offset-sm-1 col-sm-10 offset-md-3 col-md-6'>
+        <div id='alert-message'>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <script src='assets/js/jquery-3.5.1.js'></script>
+  <script src='assets/js/domFunctions.js'></script>
+  <script src='assets/js/script.js'></script>
+</body>
+</html>

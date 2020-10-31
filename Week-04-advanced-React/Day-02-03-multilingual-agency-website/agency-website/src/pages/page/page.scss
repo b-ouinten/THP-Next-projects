@@ -1,0 +1,14 @@
+@import '../../variables.scss';
+
+.page {
+  width: 98vw;
+  margin: 40px auto;
+
+  h2 {
+    color: $title-color
+  }
+
+  p {
+    color: $text-color
+  }
+}

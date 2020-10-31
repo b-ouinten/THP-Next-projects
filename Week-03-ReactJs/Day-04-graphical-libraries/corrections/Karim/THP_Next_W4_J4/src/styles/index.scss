@@ -1,0 +1,123 @@
+$theme_red: #e42238;
+$background: #1c242c;
+$input_background: #7e8186;
+
+body {
+  background-color: $background;
+  color: white;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  border-collapse: collapse;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+button {
+  background-color: $theme_red;
+  color: white;
+  border: 0;
+  padding: 0.6rem 2rem;
+  margin: 1rem 0;
+  max-width: 10rem;
+
+  &:hover {
+    color: $background;
+    cursor: pointer;
+    font-weight: bold;
+  }
+}
+
+#root {
+  display: flex;
+  flex-flow: row;
+  justify-content: flex-start;
+  min-height: 100vh;
+  div {
+    background-color: transparent;
+  }
+}
+
+.nav {
+  position: sticky;
+  width: 20%;
+  border-right: 0.1rem solid white;
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+  align-items: center;
+  padding: 1rem;
+  text-align: justify;
+
+  .list {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    .note_display {
+      word-break: break-all;
+      margin-bottom: 1rem;
+      max-height: 10rem;
+      overflow: hidden;
+    }
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+.zoom {
+  width: 77%;
+  position: fixed;
+  height: 100vh;
+  top: 0;
+  left: 23%;
+  .preview {
+    height: 40%;
+    overflow: auto;
+    padding: 0 2rem;
+    margin-top: 2rem;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    margin: 1rem;
+
+    input[type="text"],
+    textarea {
+      background-color: $input_background;
+      border: 0;
+      color: white;
+      margin-bottom: 1rem;
+      padding: 1rem;
+
+      &:focus {
+        outline: 0;
+      }
+    }
+    textarea {
+      height: 5rem;
+    }
+  }
+}
+
+::placeholder {
+  color: white;
+  opacity: 0.8;
+}
+
+.note_title {
+  color: $theme_red !important;
+  font-size: 1.2rem;
+  margin: 0;
+  margin-bottom: 0.5rem;
+}

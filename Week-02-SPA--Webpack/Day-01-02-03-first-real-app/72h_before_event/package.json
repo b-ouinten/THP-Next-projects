@@ -1,0 +1,30 @@
+{
+  "name": "web_pack_template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --config webpack.config.js --env.NODE_ENV=development",
+    "server": "webpack-dev-server --config webpack.config.js --env.NODE_ENV=development --mode development --watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^4.5.2",
+    "dayjs": "^1.9.3",
+    "jquery": "^3.5.1",
+    "popper.js": "^1.16.1",
+    "webpack": "^4.42.0",
+    "webpack-cli": "^3.3.12"
+  },
+  "devDependencies": {
+    "css-loader": "^4.3.0",
+    "dotenv-webpack": "^3.0.0",
+    "file-loader": "^6.1.1",
+    "mini-css-extract-plugin": "^1.0.0",
+    "postcss-loader": "^4.0.4",
+    "sass": "^1.27.0",
+    "sass-loader": "^10.0.3",
+    "webpack-dev-server": "^3.11.0"
+  }
+}

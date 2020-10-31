@@ -1,0 +1,71 @@
+// VARIABLES 
+
+$grey_darken_4 : #212121;
+$grey_darken_2 : #424242;
+
+// DEFAULT HEIGHT IS 100 % OF THE VIEWPORT
+#notepad{
+    height: 100vh;
+}
+// ADDED FLEX HELPER
+.justify-content-evenly{
+    justify-content: space-evenly;
+}
+
+// RIGHT PART OF THE SCREEN
+
+#current_note_content{
+    height: 20rem;
+    display: block;
+    overflow: auto;
+}
+
+.form-control, .form-control-lg{
+    border-radius: 0;
+}
+
+// NOTES CONTAINER
+
+#notes_container{
+    height: 75vh;
+    display: block;
+    overflow: auto;
+}
+
+
+// CARDS NOTES
+
+.card, .card *{
+    background-color: unset;
+    box-shadow: unset;
+    border: unset
+}
+
+.card.note .card-body {
+    display: block;
+    height: 5rem;
+    overflow: auto;
+}
+
+// SCROLLBAR
+
+* {
+    scrollbar-width: thin;
+    scrollbar-color:  $grey_darken_2  $grey_darken_4;;
+}
+
+*::-webkit-scrollbar {
+    width: 12px;
+}
+*::-webkit-scrollbar-track {
+    background:  $grey_darken_4;;
+}
+*::-webkit-scrollbar-thumb {
+    background-color:  $grey_darken_2;
+    border-radius: 20px;
+    border: 3px solid  $grey_darken_4;;
+}
+
+#current_note{
+    height: 40vh;
+}

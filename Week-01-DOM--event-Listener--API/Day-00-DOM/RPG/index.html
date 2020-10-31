@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>RPG</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div id="banner" class="jumbotron pt-2">
+        <div class="text-center">
+          <button id='go-btn' class="btn btn-primary" type="button">Go !</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="container mt-5">
+      <form id="user-character-properties-form">
+        <div class="form-row">
+          <div class="form-group offset-sm-1 col-sm-5 offset-md-2 col-md-4">
+            <label for="pseuduInput">Your pseudo !</label>
+            <input type="text" class="form-control" id="pseudoInput">
+            <div class="al alert alert-danger mb-0" id="pseudoAlert">Pseudo is required</div>
+          </div>
+          <div class="form-group col-sm-5 col-md-4">
+            <label for="characterKindInput">Your favorite character !</label>
+            <select class="form-control" id="characterKindInput"">
+              <option value=""selected disabled>Choose...</option>
+              <option value="fighter">Fighter</option>
+              <option value="paladin">Paladin</option>
+              <option value="monk">Monk</option>
+              <option value="berzerker">Berzerker</option>
+              <option value="assassin">Assassin</option>
+            </select>
+            <div class="al alert alert-danger mb-0" id="characterKindAlert">Character kind is required</div>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="col text-center">
+            <button type="submit" class="btn btn-primary" id="play-btn">Play !</button>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <div id="user-character-info" class="container mt-2">
+      <div class="text-center mb-1">
+        <button id="start-another-turn-btn" class="btn btn-primary" type="button">Next turn !</button>
+      </div>
+      <div class="row">
+        <div class="col-xs offset-sm-1 col-sm-10 offset-md-3 col-md-6">
+          <div class="card md-3 shadow-sm">
+            <div class="card-body px-2 pt-2 pb-0">
+              <article>
+                <h5>My character : <span id="name"></span></h5>
+                <h6>Class : <span id="race"></span></h1>
+                <p class="mb-2">Lifepoints : <span class="hp"></span>HP</p>
+                <p class="mana mb-2">Mana : <span></span>mana</p>
+                <p class="mb-2">Damages : <b></b>dmg</p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="d-flex flex-row justify-content-center align-items-center">
+        <img src="./assets/images/character.jpg">
+      </div>
+    </div>
+    
+
+    <div id="cursor" class="lg-cursor"></div>
+    <div id="circle" class="circle"></div>
+
+    <script src="assets/js/character.js"></script>
+    <script src="assets/js/fighter.js"></script>
+    <script src="assets/js/paladin.js"></script>
+    <script src="assets/js/monk.js"></script>
+    <script src="assets/js/berzerker.js"></script>
+    <script src="assets/js/assassin.js"></script>
+    <script src="assets/js/game.js"></script>
+    <script src="assets/js/dom_methods.js"></script>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>

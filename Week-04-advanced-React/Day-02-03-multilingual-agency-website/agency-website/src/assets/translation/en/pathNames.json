@@ -1,0 +1,14 @@
+{
+  "home": {
+    "label": "Home"
+  },
+  "about": {
+    "path": "about",
+    "label": "About"
+    },
+  "works":{ 
+    "path": "works",
+    "label": "Works"
+  },
+  "case-study.path": "case-study" 
+}

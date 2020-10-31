@@ -1,0 +1,35 @@
+{
+  "name": "j12_rawg",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --env.NODE_ENV=development --config webpack.config.js",
+    "production": "webpack --env.NODE_ENV=production --config webpack.config.js",
+    "watch": "webpack --watch"
+  },
+  "author": "Julien Lamalle",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^4.5.2",
+    "dayjs": "^1.9.1",
+    "jquery": "^3.5.1",
+    "popper.js": "^1.16.1",
+    "resolve-url-loader": "^2.0.0",
+    "webpack-cli": "^3.3.12"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.11.6",
+    "@babel/preset-env": "^7.11.5",
+    "@fortawesome/fontawesome-free": "^5.15.1",
+    "babel-loader": "^8.1.0",
+    "css-loader": "^4.3.0",
+    "dotenv-webpack": "^3.0.0",
+    "file-loader": "^6.1.1",
+    "mini-css-extract-plugin": "^1.0.0",
+    "postcss-loader": "^4.0.4",
+    "sass": "^1.27.0",
+    "sass-loader": "^10.0.3",
+    "webpack": "^5.0.0"
+  }
+}
