@@ -148,7 +148,7 @@ const showKeywordsList = (value) => {
     
     // This will allow you to add a new element in the list under the text input
     // On clic, we add the keyword
-    proposedKeywords.forEach(keyword =>
+    proposedKeywords.forEach((keyword) =>
       keyWordUl.innerHTML += `
         <li onclick="addNewKeyword('${keyword}', '${cleanedKeyword(keyword)}')">${keyword}</li>
       `
