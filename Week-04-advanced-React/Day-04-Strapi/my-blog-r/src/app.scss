@@ -1,0 +1,25 @@
+@import './variables.scss';
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: $background-color;
+  font-family: $default-font-family;
+  font-size: 16px;
+
+  h1 {
+    font-size: 2rem;
+    color: $title-color;
+  }
+
+  span {
+    font-size: 0.9rem;
+    color: $text-color;
+  }
+
+  p {
+    font-size: 1rem;
+    color: $text-color;
+  }
+}
