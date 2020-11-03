@@ -1,0 +1,47 @@
+@import '../../variables.scss';
+
+.form-container {
+  margin: 0px;
+  padding: 0px;
+  
+  form {
+    div {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      
+      input[type="submit"] {
+        font-size: 1rem;
+        margin-top: 10px;
+        background-color: $main-color;
+        color: inherit;
+        border: none;
+        align-self: flex-start;
+        height: 2rem;
+        width: 7rem;
+        cursor: pointer;
+        
+        &:hover {
+          background-color: lighten($main-color, 10%);
+        }
+        
+        &:focus {
+          outline: 0;
+        }
+      }
+
+      input[type="text"] {
+        font-size: 1rem;
+        color: inherit;
+        background-color: transparent;
+        border: none;
+        border-bottom: 1px $text-color solid;
+        height: 3rem;
+
+        &.focus {
+          outline: 0;
+        }
+      }
+    }
+  }
+}

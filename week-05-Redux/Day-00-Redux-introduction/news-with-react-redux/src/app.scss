@@ -1,0 +1,31 @@
+@import './variables.scss';
+@mixin mobile {
+  @media (max-width: $mobile) {
+    @content;
+  }
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: $background-color;
+  color: $text-color;
+  font-size: 15px;
+  font-family: $default-font;
+  
+  @include mobile {
+    font-size: 13px;
+  }
+
+  div {
+    max-width: 80vw;
+    margin: 50px auto 0px;
+    
+    h1 {
+      font-size: 1.9rem;
+      text-transform: uppercase;
+      color: $title-color;
+    }
+  }
+}
